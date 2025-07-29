@@ -9,15 +9,15 @@
   "portsAttributes": {
     "3002": {
       "label": "Grafana",
-      "onAutoForward": "openBrowser"
+      "onAutoForward": "silent"
     },
     "8080": {
       "label": "DevLake",
-      "onAutoForward": "openBrowser"
+      "onAutoForward": "silent"
     },
     "4000": {
       "label": "DevLake Config UI",
-      "onAutoForward": "notify"
+      "onAutoForward": "silent"
     },
     "3306": {
       "label": "MySQL",
