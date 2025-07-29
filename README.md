@@ -79,4 +79,4 @@ Independente da opção escolhida, acesse:
 
 Simplesmente copie o exercício para sua conta.
 
-[![](https://img.shields.io/badge/Copiar%20Exercício-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=dev-pods&template_name=dora-metrics-with-devlake-for-github&owner=%40me&name=expand-your-team-with-copilot&description=Exercício:+Configuração+pronta+de+Apache+DevLake+com+Grafana+em+um+ambiente+GitHub+Codespaces&visibility=public)
+[![](https://img.shields.io/badge/Copiar%20Exercício-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=dev-pods&template_name=dora-metrics-with-devlake-for-github&owner=%40me&name=metricas-dora-com-devlake-para-github&description=Exercício:+Configuração+pronta+de+Apache+DevLake+com+Grafana+em+um+ambiente+GitHub+Codespaces&visibility=public)
