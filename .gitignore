@@ -1,0 +1,25 @@
+# Native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# local env files
+.env*.local
+.env
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# macOS
+*.pem
+.DS_Store
+.DS_Store?
+._*
+.Trashes
+ehthumbs.db
+Thumbs.db
