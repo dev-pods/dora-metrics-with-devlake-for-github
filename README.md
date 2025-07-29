@@ -34,43 +34,6 @@ Este projeto configura um ambiente completo para coletar, analisar e visualizar 
 - Acesso a GitHub Codespaces (disponível em todos os planos, incluindo o gratuito)
 - Token de acesso pessoal do GitHub com permissões para leitura de repositórios
 
-## 🚀 Como Usar
-
-1. Antes de começar, configure o arquivo `.env` na raiz do projeto:
-   ```
-   GITHUB_TOKEN=seu_token_github_aqui
-   GRAFANA_API_TOKEN=eyJrIjoiYWRtaW4iLCJuIjoiYWRtaW4iLCJpZCI6MX0=
-   ```
-
-2. Clique no botão verde "Code" no topo deste repositório
-3. Selecione a aba "Codespaces" e clique em "Create codespace on main"
-4. Aguarde a inicialização (aproximadamente 3-5 minutos)
-   - O ambiente está configurando o DevLake e Grafana via docker-compose automaticamente
-5. Quando pronto, acesse:
-   - DevLake UI: http://localhost:8080
-   - DevLake Config UI: http://localhost:4000
-   - Grafana: http://localhost:3002
-
-## ⚙️ Configurar DevLake
-
-### Configuração Manual
-
-Para configurar o DevLake manualmente:
-
-1. Acesse a interface do DevLake em http://localhost:8080
-2. Crie uma conexão com o GitHub:
-   - Vá para "Connections" e selecione "GitHub"
-   - Adicione seu token de acesso pessoal do GitHub (instruções: [como criar um token](https://docs.github.com/pt/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token))
-
-3. Configure os plugins desejados:
-   - GitHub: para métricas de código, PRs e issues
-   - Jenkins/GitLab/Jira: para integração com CI/CD e gerenciamento de projetos
-
-4. Execute a coleta de dados:
-   - Selecione os repositórios para análise
-   - Configure o intervalo de datas
-   - Inicie a coleta
-
 ## 📊 Visualizando Métricas
 
 Após a configuração e coleta de dados, você pode visualizar as métricas DORA no Grafana:
@@ -87,53 +50,6 @@ Após a configuração e coleta de dados, você pode visualizar as métricas DOR
      - Time to Restore (tempo para restauração)
 
 3. O dashboard é atualizado automaticamente à medida que o DevLake coleta novos dados
-
-## 🔧 Desenvolvimento Local
-
-Este projeto pode ser executado de duas formas:
-
-### Opção 1: Dev Container (Recomendado)
-
-Se você tem o VS Code com a extensão Dev Containers instalada:
-
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/leandro-canabarro/dora-metrics-with-devlake-for-github.git
-   cd dora-metrics-with-devlake-for-github
-   ```
-
-2. Configure o arquivo `.env` com seu token do GitHub:
-   ```
-   GITHUB_TOKEN=seu_token_github_aqui
-   GRAFANA_API_TOKEN=eyJrIjoiYWRtaW4iLCJuIjoiYWRtaW4iLCJpZCI6MX0=
-   ```
-
-3. Abra no VS Code com Dev Container:
-   - Abra o projeto no VS Code
-   - Clique no ícone do Remote Containers no canto inferior esquerdo
-   - Selecione "Reopen in Container"
-   - O DevContainer irá automaticamente iniciar o Docker Compose com todos os serviços
-
-### Opção 2: Docker Compose Direto
-
-Para executar diretamente com Docker Compose:
-
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/leandro-canabarro/dora-metrics-with-devlake-for-github.git
-   cd dora-metrics-with-devlake-for-github
-   ```
-
-2. Configure o arquivo `.env` com seu token do GitHub:
-   ```
-   GITHUB_TOKEN=seu_token_github_aqui
-   GRAFANA_API_TOKEN=eyJrIjoiYWRtaW4iLCJuIjoiYWRtaW4iLCJpZCI6MX0=
-   ```
-
-3. Inicie os serviços:
-   ```bash
-   docker compose up -d
-   ```
 
 ### Acesso às Interfaces
 
@@ -158,3 +74,9 @@ Independente da opção escolhida, acesse:
 - [GitHub Codespaces docs](https://docs.github.com/pt/codespaces)
 - [Como criar um token do GitHub](https://docs.github.com/pt/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 - [Documentação dos dashboards DORA](https://devlake.apache.org/docs/Dashboards/DORA)
+
+### Como iniciar este exercício
+
+Simplesmente copie o exercício para sua conta.
+
+[![](https://img.shields.io/badge/Copiar%20Exercício-%E2%86%92-1f883d?style=for-the-badge&logo=github&labelColor=197935)](https://github.com/new?template_owner=dev-pods&template_name=dora-metrics-with-devlake-for-github&owner=%40me&name=expand-your-team-with-copilot&description=Exercício:+Configuração+pronta+de+Apache+DevLake+com+Grafana+em+um+ambiente+GitHub+Codespaces&visibility=public)
