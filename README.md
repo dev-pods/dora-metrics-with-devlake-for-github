@@ -32,7 +32,7 @@ Este projeto configura um ambiente completo para coletar, analisar e visualizar 
 
 - Conta GitHub
 - Acesso a GitHub Codespaces (disponível em todos os planos, incluindo o gratuito)
-- Token de acesso pessoal do GitHub com permissões para leitura de repositórios
+- Token de acesso pessoal do GitHub com permissões read:org, read:user, repo
 
 ## 📊 Visualizando Métricas
 
